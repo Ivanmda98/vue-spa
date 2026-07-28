@@ -1,1 +1,9 @@
 @import 'tailwindcss';
+
+header > nav {
+  height: 70px;
+}
+
+.router-link-exact-active {
+  @apply text-blue-500 font-bold;
+}
