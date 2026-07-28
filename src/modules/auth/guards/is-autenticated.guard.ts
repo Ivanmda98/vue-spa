@@ -6,7 +6,6 @@ const isAuthenticatedGuard = (
   next: NavigationGuardNext,
 ) => {
   const userId = localStorage.getItem('userId');
-
   localStorage.setItem('lastPath', to.path);
 
   if (!userId) {
